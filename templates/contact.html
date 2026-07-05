@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block title %}Contact - Acton Arboretum{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Contact Us</h1>
+    <p>We'd love to hear from you! Whether you have questions or want to learn more, please reach out.</p>
+
+    {% if success %}
+    <div class="success-message">
+        <strong>Thank you!</strong> Your message has been received. We'll get back to you soon!
+    </div>
+    {% endif %}
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
+        <div>
+            <h2>Contact Information</h2>
+            <div class="card">
+                <p><strong>📍 Address:</strong><br>
+                Acton Arboretum<br>
+                123 Forest Lane<br>
+                Acton, MA 01720</p>
+
+                <p><strong>📞 Phone:</strong><br>
+                (555) 123-4567</p>
+
+                <p><strong>✉️ Email:</strong><br>
+                info@actonarboretum.org</p>
+
+                <p><strong>🕐 Hours:</strong><br>
+                Monday - Friday: 9:00 AM - 5:00 PM<br>
+                Saturday - Sunday: 10:00 AM - 4:00 PM</p>
+            </div>
+        </div>
+
+        <div>
+            <h2>Send us a Message</h2>
+            <form method="POST" action="/contact">
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
