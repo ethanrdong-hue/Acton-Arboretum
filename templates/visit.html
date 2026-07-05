@@ -1,0 +1,132 @@
+{% extends "base.html" %}
+
+{% block title %}Visit - Acton Arboretum{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Plan Your Visit</h1>
+    <p>Everything you need to know to plan a wonderful day at Acton Arboretum.</p>
+
+    <h2>Hours of Operation</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Season</th>
+                <th>Hours</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Spring & Summer (March - October)</td>
+                <td>7:00 AM - 8:00 PM</td>
+            </tr>
+            <tr>
+                <td>Fall & Winter (November - February)</td>
+                <td>7:00 AM - 5:00 PM</td>
+            </tr>
+            <tr>
+                <td>Closed</td>
+                <td>Thanksgiving, Christmas, New Year's Day</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Admission</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Adults</td>
+                <td>$12</td>
+            </tr>
+            <tr>
+                <td>Seniors (65+)</td>
+                <td>$8</td>
+            </tr>
+            <tr>
+                <td>Children (6-12)</td>
+                <td>$6</td>
+            </tr>
+            <tr>
+                <td>Children under 6</td>
+                <td>Free</td>
+            </tr>
+            <tr>
+                <td>Annual Membership</td>
+                <td>$60</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Location & Directions</h2>
+    <div class="card">
+        <p><strong>Address:</strong></p>
+        <p>Acton Arboretum<br>
+        123 Forest Lane<br>
+        Acton, MA 01720</p>
+
+        <p><strong>By Car:</strong> Easy access from Route 2. Ample free parking available.</p>
+        <p><strong>By Public Transit:</strong> Bus stops available within walking distance.</p>
+        <p><strong>Bicycle:</strong> Bike racks available near the entrance.</p>
+    </div>
+
+    <h2>Facilities & Amenities</h2>
+    <div class="card-grid">
+        <div class="card">
+            <h3>🅿️ Parking</h3>
+            <p>Free parking for all visitors</p>
+        </div>
+        <div class="card">
+            <h3>🚻 Restrooms</h3>
+            <p>Clean, well-maintained facilities</p>
+        </div>
+        <div class="card">
+            <h3>💧 Water Fountains</h3>
+            <p>Throughout the grounds</p>
+        </div>
+        <div class="card">
+            <h3>🪑 Seating</h3>
+            <p>Benches and rest areas</p>
+        </div>
+        <div class="card">
+            <h3>♿ Accessibility</h3>
+            <p>ADA-compliant pathways</p>
+        </div>
+        <div class="card">
+            <h3>🎓 Gift Shop</h3>
+            <p>Books, guides, and gifts</p>
+        </div>
+    </div>
+
+    <h2>What to Bring</h2>
+    <ul style="margin-left: 2rem;">
+        <li>Comfortable walking shoes</li>
+        <li>Sun protection (hat, sunscreen)</li>
+        <li>Water bottle</li>
+        <li>Camera for photos</li>
+        <li>Bug spray (especially in summer)</li>
+        <li>Field guide or phone app for tree identification</li>
+    </ul>
+
+    <h2>Visitor Guidelines</h2>
+    <ul style="margin-left: 2rem;">
+        <li>Stay on designated paths</li>
+        <li>Do not pick flowers or damage plants</li>
+        <li>Pets welcome on leash</li>
+        <li>Photography allowed (non-commercial)</li>
+        <li>Picnicking permitted in designated areas</li>
+        <li>No bicycles on trails</li>
+    </ul>
+
+    <div style="text-align: center; margin-top: 2rem;">
+        <h2>Questions?</h2>
+        <p>Contact us for more information about your visit.</p>
+        <a href="/contact" class="btn btn-secondary">Get in Touch</a>
+    </div>
+</div>
+{% endblock %}
